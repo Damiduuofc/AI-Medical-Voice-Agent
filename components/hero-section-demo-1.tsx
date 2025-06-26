@@ -1,12 +1,11 @@
 "use client";
 
-
 import { motion } from "motion/react";
-import { BentoGridSecondDemo } from "./_components/BentoGridSecondDemo";
 
 export default function HeroSectionOne() {
+
   return (
-    <div className="relative flex  flex-col items-center justify-center">
+    <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
       <Navbar />
       <div className="absolute inset-y-0 left-0 h-full w-px bg-neutral-200/80 dark:bg-neutral-800/80">
         <div className="absolute top-0 h-40 w-px bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
@@ -19,7 +18,7 @@ export default function HeroSectionOne() {
       </div>
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Revolutionize Patient Care with  AI-Powered Agents"
+          {"Launch your website in hours, not days"
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -50,7 +49,9 @@ export default function HeroSectionOne() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Provide 24/7 intelligent medical support using conversational AI. Triage symptoms, book appointments, and deliver empathetic care with voice-first automation.
+          With AI, you can launch your website in hours, not days. Try our best
+          in class, state of the art, cutting edge AI tools to get your website
+          up.
         </motion.p>
         <motion.div
           initial={{
@@ -98,16 +99,13 @@ export default function HeroSectionOne() {
           </div>
         </motion.div>
       </div>
-
-  <BentoGridSecondDemo/>
-    
     </div>
   );
 }
 
 const Navbar = () => {
   return (
-    <nav className=" top-0 z-50 left-0 w-full z-50 flex w-full items-center justify-between border-t border-b border-neutral-200 px-4 py-4 dark:border-neutral-800 bg-white dark:bg-neutral-900">
+    <nav className="flex w-full items-center justify-between border-t border-b border-neutral-200 px-4 py-4 dark:border-neutral-800">
       <div className="flex items-center gap-2">
         <div className="size-7 rounded-full bg-gradient-to-br from-violet-500 to-pink-500" />
         <h1 className="text-base font-bold md:text-2xl">Aceternity UI</h1>
@@ -118,5 +116,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
- 
